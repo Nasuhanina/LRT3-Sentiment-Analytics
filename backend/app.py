@@ -18,7 +18,7 @@ nltk.download('punkt', quiet=True)
 app = Flask(__name__)
 CORS(app)
 
-CSV_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'lrt3-sentiment.csv')
+CSV_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'lrt3-sentiment5.csv')
 df = pd.read_csv(CSV_PATH)
 
 STOPWORDS = set(stopwords.words('english'))
